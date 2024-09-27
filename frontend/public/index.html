@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Conversion Platform</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Lead Conversion Platform</h1>
+    </header>
+
+    <div id="root"></div>
+    
+    <main>
+        <section>
+            <h2>Add New Lead</h2>
+            <form id="leadForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="source">Source:</label>
+                <select id="source" name="source" required>
+                    <option value="">Select a source</option>
+                    <option value="Website">Website</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Referral">Referral</option>
+                </select>
+
+                <button type="submit">Add Lead</button>
+            </form>
+        </section>
+
+        <section id="leadsList">
+            <h2>Leads</h2>
+            <ul id="leadsContainer">
+                <!-- Leads will be dynamically populated here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lead Conversion Platform</p>
+    </footer>
+
+    <script src="index.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
